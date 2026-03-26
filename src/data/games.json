@@ -436,7 +436,7 @@
       "slug": "boba-bubble-tea",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/25777/",
       "thumbnail": "boba-bubble-tea-thumb.jpg",
-      "description": "<p>Bubble tea — or boba — conquered the world from a Taiwanese tea stand in the 1980s, and this Google Doodle celebrates its global takeover. Each customer arrives with a specific order: pick the right tea base, add the correct syrup, measure the tapioca pearls, and seal the cup before the queue backs up.</p><p>As you level up, the orders grow more complex and the customers grow more impatient. Speed matters, but accuracy matters more — a wrong ingredient means a reorder and a disappointed face at the counter. Master the menu and you'll have them lining up around the block.</p>",
+      "description": "<p>Bubble tea — or boba — conquered the world from a Taiwanese tea stand in the 1980s, and this Google Doodle celebrates its global journey with a charming interactive quiz. Learn about the origins of tapioca pearls, the art of shaking a perfect cup, and the dizzying variety of flavours that turned a humble drink into an international phenomenon.</p><p>Each stage guides you through the story of boba — from its roots in Taichung to the creative toppings that define modern bubble tea culture. Tap along, discover fun facts, and watch the animations bring every fizzy, chewy, sweet sip to life. A refreshing celebration of one of the world's most iconic drinks.</p>",
       "intro": [
         "Google celebrates the world's favourite Taiwanese drink with a bubble tea making Doodle.",
         "Shake, mix, and pour ingredients in the right order to satisfy every customer."
@@ -760,10 +760,10 @@
       "slug": "celebrating-pani-puri",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/25816/",
       "thumbnail": "celebrating-pani-puri-thumb.jpg",
-      "description": "<p>Pani puri — crispy hollow shells filled with spiced water, chickpeas, and chutney — is one of India's most iconic street foods, and this Google Doodle celebrates it with a vibrant match-3 puzzle. Swap adjacent ingredients to line up three or more of the same type, fulfilling each customer's order before your time runs out.</p><p>Chains and combos unlock special tiles that clear entire rows at once. The orders grow more complex with every stage, demanding faster thinking and longer-range planning. A joyful, colourful puzzle that doubles as a love letter to Indian street food culture.</p>",
+      "description": "<p>Pani puri — crispy hollow shells filled with spiced water, chickpeas, and chutney — is one of India's most iconic street foods, and this Google Doodle celebrates it with a joyful interactive experience. Each round presents you with a plate of empty puri shells and a selection of fillings and flavoured waters. Choose the right combination of ingredients for each puri to match the recipe and serve a perfect batch.</p><p>As you progress, the recipes grow more complex and the selection of fillings expands, testing how well you know your tamarind from your mint water. The vibrant art and playful animations make every successful plate feel like a celebration. A delicious, colourful tribute to Indian street food culture that will leave you craving the real thing.</p>",
       "intro": [
-        "Match ingredients at speed to serve up India's most beloved street snack.",
-        "The queue never stops — keep your combo alive to beat each level."
+        "Assemble the perfect pani puri by choosing the right fillings and flavoured water.",
+        "Each round introduces new ingredients — master every recipe to become a street food legend."
       ],
       "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Pick puri groups </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "4",
@@ -1091,10 +1091,10 @@
       "slug": "coffee-craze-sorting-game",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/29627/",
       "thumbnail": "coffee-craze-sorting-game-thumb.jpg",
-      "description": "<p>Coffee Craze drops you behind the counter of a seriously busy café. Orders flood in from all sides: flat whites, cold brews, double-shot caramel lattes with oat milk and a sprinkle of pretension. Your job is to read each ticket quickly and direct every cup to the correct station before the queue explodes.</p><p>Early shifts are manageable. By the lunch rush you'll have six orders in the air at once and a queue stretching out the door. Nail the rhythm and the satisfaction is immense; fumble an order and the cascading delay makes everything worse. A pure test of speed, pattern recognition, and calm under pressure.</p>",
+      "description": "<p>Coffee Craze is a colour-sorting puzzle dressed in a cosy coffee-shop theme. Each level presents you with a set of tall glasses filled with layers of different coloured liquids. Your goal is to pour liquid from one glass to another, one colour at a time, until every glass contains a single pure colour from top to bottom.</p><p>The catch is simple but devious: you can only pour onto a matching colour or into an empty glass, and the glasses fill up fast. Later levels add more colours, taller containers, and fewer empty glasses to work with, demanding careful planning several moves ahead. A relaxing yet surprisingly brain-bending puzzle that rewards patience and spatial thinking.</p>",
       "intro": [
-        "The coffee shop is slammed — sort incoming orders at lightning speed to keep the queue moving.",
-        "Get it wrong and customers leave. Get it right and you unlock even more chaotic rush hours."
+        "Pour coloured liquids between glasses until each one holds a single pure colour.",
+        "Think ahead — one careless pour can leave you stuck with no moves left."
       ],
       "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Sort the coffee boxes </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-2.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "23",
@@ -1313,7 +1313,7 @@
         "Chrome's legendary offline dino — jump cacti, duck pterodactyls, and survive forever.",
         "A tiny homage to the pre-internet era, hidden inside every Chrome browser."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Jump over obstacles </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/enter.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/w.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Jump </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Duck </span> <img src=\"/assets/images/icons/arrow_down.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "39",
       "dislikes": "10",
       "plays": "10.6K",
@@ -2069,10 +2069,10 @@
       "slug": "doodle-jump-3",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/25731/",
       "thumbnail": "doodle-jump-3-thumb.jpg",
-      "description": "<p>Doodle Jump 3 sends the Doodler to a vibrant new world with a fresh visual palette and a set of obstacles designed specifically to catch experienced players off guard. Exploding platforms, enemies with unexpected projectiles, and gravity shifts appear just when you've settled into a rhythm and started feeling confident.</p><p>The fundamental joy is unchanged: bounce upward, stay focused, never stop climbing. But the new additions demand that even long-time fans rethink their approach. If you've mastered the first two games, this is the challenge you've been waiting for.</p>",
+      "description": "<p>Doodle Jump returns with the same irresistible bounce-and-climb formula that made the original a mobile legend. The Doodler launches off green platforms, springs from trampolines, and rides rocket packs through an ever-scrolling vertical world filled with monsters, UFOs, and black holes that will swallow your run whole.</p><p>Tilt left and right to land on each platform and shoot upward at enemies blocking your path. Every attempt teaches you something new — which platforms crumble, which monsters dodge your shots, and exactly how far you can stretch a risky gap. The leaderboard is always watching, and beating your personal best never gets old.</p>",
       "intro": [
-        "The Doodler's third adventure brings a new world and new traps to master.",
-        "Veteran players will spot the new obstacles — everyone will lose sleep trying to beat their score."
+        "Bounce ever higher through a gauntlet of monsters, moving platforms, and jetpack rides.",
+        "One missed platform ends the run — how high can you climb before gravity wins?"
       ],
       "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Tilt the alien left or right </span> <img src=\"/assets/images/icons/arrow-right.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Fire </span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "10",
@@ -2453,7 +2453,7 @@
         "A love-struck pangolin needs your help gathering ingredients for the perfect Valentine's cake.",
         "Navigate treacherous terrain, collect every grain, and deliver the gift before the day ends."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Move the lizard </span> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/arrow-right.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/a.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/d.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Jump </span> <img src=\"/assets/images/icons/w.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Dive underwater </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Move the pangolin </span> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/arrow-right.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/a.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/d.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Jump </span> <img src=\"/assets/images/icons/w.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Dive underwater </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "51",
       "dislikes": "9",
       "plays": "2.29K",
@@ -2506,7 +2506,7 @@
         "Two hamsters are in love — but a maze of disconnected pipes stands between them.",
         "Rotate segments to create a continuous path and reunite the lovestruck rodents."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Adjust the control panel levers </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-2.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Toggle mute </span> <img src=\"/assets/images/icons/enter.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Rotate a pipe segment </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-2.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Toggle mute </span> <img src=\"/assets/images/icons/enter.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "32",
       "dislikes": "14",
       "plays": "1.61K",
@@ -2616,7 +2616,7 @@
         "Finish Google's autocomplete suggestions before the clock — it's harder and funnier than it looks.",
         "The more you search, the better you'll do. Or maybe not."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Browse categories </span> <img src=\"/assets/images/icons/mouse.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Type your answer </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Browse categories </span> <img src=\"/assets/images/icons/mouse.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Type your guess </span> <img src=\"/assets/images/icons/wasd.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Submit answer </span> <img src=\"/assets/images/icons/enter.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "32",
       "dislikes": "4",
       "plays": "3.39K",
@@ -2772,10 +2772,10 @@
       "slug": "google-cat-game",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/25754/",
       "thumbnail": "google-cat-game-thumb.jpg",
-      "description": "<p>In Magic Cat Academy 2, Momo faces a supernatural invasion of the Academy itself. Ghosts materialise in every corridor, each one wearing a specific symbol above its head — your swipe must trace that symbol before the ghost reaches the end of the room. Miss too many and the room is lost.</p><p>Combos chain automatically when you banish multiple ghosts in quick succession, multiplying your score and generating satisfying screen-clearing bursts of magic. Each level introduces new ghost types with more complex symbols and faster movement. The art is gorgeous and the difficulty curve is perfectly judged. An essential Doodle.</p>",
+      "description": "<p>Google's beloved Halloween Doodle stars Momo, a brave little black cat defending the Magic Cat Academy from an invasion of mischievous ghosts. Each phantom floats toward you bearing a glowing symbol — quickly trace that exact shape with your mouse or finger to cast a spell and banish it before it reaches you.</p><p>As the night deepens, ghosts arrive faster and their symbols grow more intricate, demanding razor-sharp reflexes and precise drawing. Chain multiple banishments together for screen-clearing combo bursts that rack up massive points. With five spooky levels and an unforgettable boss fight, this 2016 Doodle remains one of Google's most polished and replayable creations.</p>",
       "intro": [
-        "Evil spirits have invaded the Magic Cat Academy — swipe symbols to banish every one.",
-        "Protect each classroom and chain combos to score big in this Halloween Doodle sequel."
+        "Momo the cat must defend the Magic Cat Academy from waves of symbol-bearing ghosts.",
+        "Trace each ghost's symbol to cast a spell — chain combos and survive the night."
       ],
       "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Trace a spell symbol </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-2.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "197",
@@ -3534,7 +3534,7 @@
         "Flip cards, find matching pairs, and clear the board — Google's classic memory trainer.",
         "The later rounds are genuinely ruthless. Your brain will get the workout it deserves."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Flip a tile to reveal it </span> <img src=\"/assets/images/icons/wasd.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrows.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Mute </span> <img src=\"/assets/images/icons/m.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Flip a card </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/mouse-2.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "16",
       "dislikes": "5",
       "plays": "3.58K",
@@ -3805,7 +3805,7 @@
         "Weave through endless traffic, collect coins, and upgrade your car in this relentless racer.",
         "One wrong swerve sends you back to the start — stay sharp and keep accelerating."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Steer </span> <img src=\"/assets/images/icons/escape.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Accelerate </span> <img src=\"/assets/images/icons/w.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Brake </span> <img src=\"/assets/images/icons/s.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_down.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Switch camera </span> <img src=\"/assets/images/icons/a.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/d.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/arrow-right.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Honk </span> <img src=\"/assets/images/icons/c.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Horn </span> <img src=\"/assets/images/icons/h.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Steer left / right </span> <img src=\"/assets/images/icons/a.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/d.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow-left.svg\" alt=\"mouse-all\"> <img src=\"/assets/images/icons/arrow-right.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Accelerate </span> <img src=\"/assets/images/icons/w.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Brake </span> <img src=\"/assets/images/icons/s.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_down.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Pause </span> <img src=\"/assets/images/icons/escape.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Honk </span> <img src=\"/assets/images/icons/h.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "116",
       "dislikes": "22",
       "plays": "6.38K",
@@ -3857,9 +3857,9 @@
       "description": "<p>When your Wi-Fi drops and Chrome displays the 'No Internet' page, a small pixelated Tyrannosaurus sits beside the error message. Press Space or tap it and the game begins: the dino charges forward through a desert that scrolls ever faster, and your only tools are a jump and a duck. Hit a cactus or a pterodactyl and it's over.</p><p>The game is built into every copy of Chrome — you've probably accidentally started it dozens of times. Play it here intentionally and see how far the simple binary of jump/duck can take you. Deceptively pure, genuinely tense, and responsible for untold hours of productive procrastination worldwide.</p>",
       "intro": [
         "The original offline Chrome dino — jump cacti, duck pterodactyls, and run forever.",
-        "It secretly caps at 17 million points. Nobody has ever seen that screen."
+        "The score caps at 99,999 — a milestone very few players have ever reached."
       ],
-      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Make the dino leap </span> <img src=\"/assets/images/icons/mouse-3.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"></div></div></div>",
+      "controls": "<div class=\"controls__container-row\"> <div class=\"controls__block\"> <div class=\"controls__item control\"> <span class=\"control__desc\"> Jump </span> <img src=\"/assets/images/icons/spaceEN.svg\" alt=\"mouse-all\"> <span class=\"control__desc\"> or</span> <img src=\"/assets/images/icons/arrow_up.svg\" alt=\"mouse-all\"> </div> <div class=\"controls__item control\"> <span class=\"control__desc\"> Duck </span> <img src=\"/assets/images/icons/arrow_down.svg\" alt=\"mouse-all\"></div></div></div>",
       "likes": "212",
       "dislikes": "58",
       "plays": "10.85K",
