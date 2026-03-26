@@ -1,0 +1,8 @@
+/* Nunito font family */
+/* Tippy tooltip (minimal) */
+.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}
+[data-tippy-root]{max-width:calc(100vw - 10px)}
+.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}
+.tippy-arrow{width:16px;height:16px;color:#333}
+.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}
+.tippy-content{position:relative;padding:5px 9px;z-index:1}

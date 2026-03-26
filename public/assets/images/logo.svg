@@ -1,0 +1,24 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="rrClip">
+      <rect width="48" height="48" rx="11"/>
+    </clipPath>
+  </defs>
+
+  <!-- Google quad-color background -->
+  <g clip-path="url(#rrClip)">
+    <rect x="0"  y="0"  width="24" height="24" fill="#4285F4"/>
+    <rect x="24" y="0"  width="24" height="24" fill="#EA4335"/>
+    <rect x="0"  y="24" width="24" height="24" fill="#34A853"/>
+    <rect x="24" y="24" width="24" height="24" fill="#FBBC04"/>
+  </g>
+
+  <!-- Cartoon white button circle -->
+  <circle cx="24" cy="24" r="15" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+
+  <!-- Bold play triangle -->
+  <path d="M20 17 L20 31 L33 24 Z" fill="#4285F4" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Cartoon shine highlight -->
+  <circle cx="18" cy="18" r="3" fill="white" opacity="0.5"/>
+</svg>
