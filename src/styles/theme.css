@@ -327,7 +327,6 @@ a { color: inherit; text-decoration: none; }
 
 /* iframe */
 .gp-frame-wrap { width: 100%; height: clamp(280px, 54vh, 500px); border-radius: var(--radius); overflow: hidden; background: #0d0d1a; border: 2px solid rgba(108,92,231,.2); box-shadow: 0 8px 32px rgba(108,92,231,.12), 0 2px 8px rgba(0,0,0,.08); position: relative; }
-@media (max-width: 640px) { .gp-frame-wrap { height: clamp(220px, 45vw, 340px); } }
 .gp-iframe { width: 100%; height: 100%; border: none; display: block; }
 /* Play overlay */
 @keyframes overlay-pulse {
@@ -504,7 +503,7 @@ a { color: inherit; text-decoration: none; }
 .game-carousel { margin-top: 22px !important; }
 .carousel-card { border-radius: var(--radius) !important; overflow: hidden !important; background: var(--bg-card) !important; border: 1.5px solid var(--border) !important; transition: all .25s cubic-bezier(.4,0,.2,1) !important; }
 .carousel-card:hover { transform: translateY(-4px) !important; border-color: rgba(108,92,231,.3) !important; box-shadow: 0 10px 28px rgba(108,92,231,.13) !important; }
-.carousel-card__img { aspect-ratio: 1/1; overflow: hidden; background: var(--bg-page) !important; }
+.carousel-card__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-page) !important; }
 .carousel-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .carousel-card__name { font-size: 0.72rem !important; font-weight: 700 !important; color: var(--text-primary) !important; padding: 6px 8px !important; text-align: center !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
 .swiper-button-prev, .swiper-button-next { color: var(--accent) !important; background: rgba(255,255,255,.9) !important; border: 1.5px solid rgba(108,92,231,.2) !important; width: 30px !important; height: 30px !important; border-radius: 50% !important; box-shadow: 0 2px 10px rgba(108,92,231,.12) !important; transition: all .2s !important; }
@@ -516,7 +515,6 @@ a { color: inherit; text-decoration: none; }
 .related-card__img { aspect-ratio: 1/1; overflow: hidden; background: var(--bg-page) !important; }
 .related-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .related-card__name { font-size: 0.72rem !important; font-weight: 700 !important; color: var(--text-primary) !important; padding: 6px 8px !important; text-align: center !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; }
-@media (max-width: 600px) { .related-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; } }
 
 /* ────────────────────────────────────────────────────────────
    HOME ABOUT
@@ -604,63 +602,106 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 960px) {
   .site-nav { display: none !important; }
   .site-hamburger { display: flex !important; }
-  /* Remove the margin-left:auto that was pushing search away from the nav
-     (no nav here anymore, search just grows with flex:1) */
   .site-search { margin-left: 0; max-width: 280px; }
 }
 
 /* ── ≤768px: sidebar becomes a drawer, full-width layout ─────── */
 @media (max-width: 768px) {
-  /* Let search fill the full remaining space */
-  .site-search { max-width: none; }
-  .home-page, .cat-page, .gp-wrap { padding-left: 16px !important; padding-right: 16px !important; }
+  /* Search: fill all remaining space */
+  .site-search { max-width: none !important; flex: 1 !important; }
+
+  /* Page content: tighter padding */
+  .home-page { padding: 20px 14px 48px !important; }
+  .cat-page  { padding: 20px 14px 48px !important; }
+  .gp-wrap   { padding: 18px 14px 48px !important; }
+
+  /* Home intro */
   .home-intro { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .gp-actions { flex-direction: column; align-items: stretch; }
+  .home-intro__badge { font-size: 0.68rem; padding: 5px 12px; }
+
+  /* Action bar */
+  .gp-actions { flex-direction: column; align-items: stretch; padding: 10px 12px !important; }
   .gp-actions__left, .gp-actions__right { justify-content: flex-start; flex-wrap: wrap; }
-  .site-footer__cols { grid-template-columns: 1fr !important; gap: 20px; padding: 26px 20px 20px; }
+
+  /* Game page: stack main + sidebar vertically */
+  .gp-layout { flex-direction: column !important; gap: 20px !important; }
+  .gp-main { width: 100% !important; }
+  .gp-sidebar { width: 100% !important; position: static !important; max-height: none !important; overflow: visible !important; }
+  .gp-sidebar__section { margin-bottom: 14px; }
+  .gp-sidebar__list { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important; gap: 6px !important; }
+  .gp-sidebar__item { width: auto !important; padding: 4px 5px !important; }
+  .gp-sidebar__item-img { width: 36px !important; height: 36px !important; }
+  .gp-sidebar__item-name { font-size: 0.68rem !important; }
+
+  /* Iframe frame: landscape-ish on mobile */
+  .gp-frame-wrap { height: clamp(200px, 50vw, 360px) !important; border-radius: var(--radius-sm) !important; }
+
+  /* Cards grid */
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important; gap: 10px !important; }
+  .related-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)) !important; gap: 8px !important; }
+
+  /* Carousel: constrain slides */
+  .game-swiper .swiper-slide { width: 140px !important; }
+  .carousel-card__img { aspect-ratio: 4/3 !important; }
+
+  /* Footer */
+  .site-footer__cols { grid-template-columns: 1fr !important; gap: 20px; padding: 24px 20px 20px; }
   .site-footer__bottom { padding: 12px 20px; }
   .site-footer__copy { text-align: left; }
-  .inner-page { padding: 24px 16px 48px; }
+
+  /* Inner pages */
+  .inner-page { padding: 20px 14px 48px; }
   .contact-form__row { grid-template-columns: 1fr; }
-  /* Game page: stack game + sidebar */
-  .gp-layout { flex-direction: column; }
-  .gp-sidebar { width: 100%; position: static; max-height: none; }
-  .gp-sidebar__list { flex-direction: row; flex-wrap: wrap; gap: 4px; }
-  .gp-sidebar__item { width: calc(50% - 4px); }
-  /* Sidebar becomes a right-side drawer */
+
+  /* Left sidebar → mobile drawer */
   .menu {
     position: fixed !important;
     top: 0 !important; left: unset !important; right: 0 !important;
     height: 100dvh !important; height: 100vh !important;
-    width: 270px !important;
+    width: 270px !important; max-width: 80vw !important;
     z-index: 300 !important;
     padding-top: 0 !important;
     transform: translateX(100%) !important;
     transition: transform .28s cubic-bezier(.4,0,.2,1) !important;
     box-shadow: -8px 0 32px rgba(108,92,231,.18) !important;
     background: #fff !important;
+    border-right: none !important;
   }
   .menu._active { transform: translateX(0) !important; }
-  .games-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+
+  /* Mobile overlay */
+  .mobile-overlay { z-index: 299 !important; }
+
+  /* Home about */
+  .home-about { padding: 20px 18px 22px; margin-top: 28px; }
 }
 
-/* ── ≤600px: phone layout adjustments ────────────────────────── */
-@media (max-width: 600px) {
-  .site-header__inner { padding: 0 14px; gap: 10px; }
-  /* Shrink iframe to not dominate the phone screen */
-  .gp-frame-wrap { height: clamp(210px, 52vw, 340px); }
-  .home-intro__title { font-size: 1.3rem; }
-  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 9px; }
-  /* Category/game page: tighten top padding */
-  .home-page, .cat-page, .gp-wrap { padding-top: 20px !important; }
-}
-
-/* ── ≤480px: tiny screens ─────────────────────────────────────── */
+/* ── ≤480px: phone layout ────────────────────────────────────── */
 @media (max-width: 480px) {
-  .site-header__inner { padding: 0 12px; gap: 8px; }
-  /* Hide wordmark — keep just the icon so search has room */
+  .site-header__inner { padding: 0 10px !important; gap: 8px !important; }
   .site-logo__text { display: none !important; }
-  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
-  .gp-sidebar__item { width: 100%; }
-  .gp-actions { gap: 8px; }
+  .site-logo__icon { width: 28px !important; height: 28px !important; }
+  .site-search__form { height: 34px !important; padding: 0 12px !important; }
+  .site-search__input { font-size: 0.82rem !important; }
+  .site-hamburger svg { width: 20px; height: 20px; }
+
+  .gp-title { font-size: 1.15rem !important; }
+  .home-intro__title { font-size: 1.2rem !important; }
+  .home-intro__desc { font-size: 0.82rem; margin: 12px 0 20px; }
+
+  .gp-frame-wrap { height: clamp(180px, 48vw, 300px) !important; }
+
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important; gap: 8px !important; }
+  .gcard__body { padding: 7px 9px 8px; }
+  .gcard__name { font-size: 0.72rem; }
+  .gcard__cat { font-size: 0.6rem; }
+
+  .gp-sidebar__list { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important; }
+
+  .gp-vote { padding: 5px 10px !important; font-size: 0.72rem !important; }
+  .gp-btn { height: 30px !important; min-width: 30px !important; padding: 0 9px !important; font-size: 0.7rem !important; }
+
+  .cat-page__title { font-size: 1.2rem !important; }
+
+  .gp-actions { gap: 6px !important; padding: 8px 10px !important; }
 }
