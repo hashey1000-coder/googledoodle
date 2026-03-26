@@ -93,7 +93,7 @@ a { color: inherit; text-decoration: none; }
 .site-nav__link { color: var(--text-muted) !important; font-size: 0.8rem; font-weight: 700; padding: 6px 12px; border-radius: 999px; transition: all .2s ease; white-space: nowrap; }
 .site-nav__link:hover { color: var(--accent) !important; background: var(--accent-glow) !important; }
 .site-nav__link.active { color: #fff !important; background: var(--accent) !important; box-shadow: 0 2px 10px rgba(108,92,231,.3); }
-.site-search { flex: 1; max-width: 380px; margin-left: auto; position: relative; }
+.site-search { flex: 1; max-width: 380px; margin-left: auto; position: relative; min-width: 0; }
 .site-search__form {
   display: flex; align-items: center; gap: 8px;
   background: var(--bg-page) !important; border: 1.5px solid var(--border) !important;
@@ -599,42 +599,68 @@ a { color: inherit; text-decoration: none; }
 /* ────────────────────────────────────────────────────────────
    RESPONSIVE
 ─────────────────────────────────────────────────────────────── */
-@media (max-width: 768px) {
+
+/* ── ≤960px: nav links overflow at this width — hide them ───── */
+@media (max-width: 960px) {
   .site-nav { display: none !important; }
   .site-hamburger { display: flex !important; }
+  /* Remove the margin-left:auto that was pushing search away from the nav
+     (no nav here anymore, search just grows with flex:1) */
+  .site-search { margin-left: 0; max-width: 280px; }
+}
+
+/* ── ≤768px: sidebar becomes a drawer, full-width layout ─────── */
+@media (max-width: 768px) {
+  /* Let search fill the full remaining space */
+  .site-search { max-width: none; }
   .home-page, .cat-page, .gp-wrap { padding-left: 16px !important; padding-right: 16px !important; }
   .home-intro { flex-direction: column; align-items: flex-start; gap: 10px; }
   .gp-actions { flex-direction: column; align-items: stretch; }
-  .gp-actions__left, .gp-actions__right { justify-content: flex-start; }
-  .site-footer__inner { flex-direction: column; align-items: flex-start; }
-  .site-footer__cols { grid-template-columns: 1fr !important; gap: 24px; padding: 28px 24px 24px; }
-  .site-footer__bottom { padding: 14px 24px; }
+  .gp-actions__left, .gp-actions__right { justify-content: flex-start; flex-wrap: wrap; }
+  .site-footer__cols { grid-template-columns: 1fr !important; gap: 20px; padding: 26px 20px 20px; }
+  .site-footer__bottom { padding: 12px 20px; }
   .site-footer__copy { text-align: left; }
   .inner-page { padding: 24px 16px 48px; }
   .contact-form__row { grid-template-columns: 1fr; }
-  /* Collapse sidebar below main on mobile */
+  /* Game page: stack game + sidebar */
   .gp-layout { flex-direction: column; }
   .gp-sidebar { width: 100%; position: static; max-height: none; }
   .gp-sidebar__list { flex-direction: row; flex-wrap: wrap; gap: 4px; }
   .gp-sidebar__item { width: calc(50% - 4px); }
+  /* Sidebar becomes a right-side drawer */
   .menu {
     position: fixed !important;
-    top: 0 !important;
-    left: unset !important;
-    right: 0 !important;
-    height: 100vh !important;
+    top: 0 !important; left: unset !important; right: 0 !important;
+    height: 100dvh !important; height: 100vh !important;
     width: 270px !important;
     z-index: 300 !important;
     padding-top: 0 !important;
     transform: translateX(100%) !important;
     transition: transform .28s cubic-bezier(.4,0,.2,1) !important;
-    box-shadow: -8px 0 32px rgba(108,92,231,.15) !important;
+    box-shadow: -8px 0 32px rgba(108,92,231,.18) !important;
     background: #fff !important;
   }
   .menu._active { transform: translateX(0) !important; }
-  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
 }
+
+/* ── ≤600px: phone layout adjustments ────────────────────────── */
+@media (max-width: 600px) {
+  .site-header__inner { padding: 0 14px; gap: 10px; }
+  /* Shrink iframe to not dominate the phone screen */
+  .gp-frame-wrap { height: clamp(210px, 52vw, 340px); }
+  .home-intro__title { font-size: 1.3rem; }
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 9px; }
+  /* Category/game page: tighten top padding */
+  .home-page, .cat-page, .gp-wrap { padding-top: 20px !important; }
+}
+
+/* ── ≤480px: tiny screens ─────────────────────────────────────── */
 @media (max-width: 480px) {
-  .site-header__inner { padding: 0 12px; gap: 10px; }
-  .games-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 7px; }
+  .site-header__inner { padding: 0 12px; gap: 8px; }
+  /* Hide wordmark — keep just the icon so search has room */
+  .site-logo__text { display: none !important; }
+  .games-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+  .gp-sidebar__item { width: 100%; }
+  .gp-actions { gap: 8px; }
 }
