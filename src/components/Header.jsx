@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 import gameData from '../data/games.json';
 
@@ -128,12 +128,12 @@ export default function Header({ onMenuToggle }) {
 
         {/* Desktop nav */}
         <nav className="site-nav">
-          <Link className="site-nav__link" to="/all/">All Games</Link>
-          <Link className="site-nav__link" to="/snake-games/">Snake</Link>
-          <Link className="site-nav__link" to="/classroom/">Classroom</Link>
-          <Link className="site-nav__link" to="/sports/">Sports</Link>
-          <Link className="site-nav__link" to="/dinosaur-games/">Dino</Link>
-          <Link className="site-nav__link" to="/anniversary/">Anniversary</Link>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/all/">All Games</NavLink>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/snake-games/">Snake</NavLink>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/classroom/">Classroom</NavLink>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/sports/">Sports</NavLink>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/dinosaur-games/">Dino</NavLink>
+          <NavLink className={({isActive}) => `site-nav__link${isActive ? ' active' : ''}`} to="/anniversary/">Anniversary</NavLink>
         </nav>
 
         {/* Search */}

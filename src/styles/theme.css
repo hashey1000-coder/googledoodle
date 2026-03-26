@@ -81,6 +81,7 @@ a { color: inherit; text-decoration: none; }
 .site-nav { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
 .site-nav__link { color: var(--text-muted) !important; font-size: 0.8rem; font-weight: 700; padding: 5px 9px; border-radius: var(--radius-xs); transition: color .15s, background .15s; white-space: nowrap; }
 .site-nav__link:hover { color: var(--accent) !important; background: rgba(26,115,232,.07) !important; }
+.site-nav__link.active { color: var(--accent) !important; background: rgba(26,115,232,.12) !important; }
 .site-search { flex: 1; max-width: 360px; margin-left: auto; position: relative; }
 .site-search__form {
   display: flex; align-items: center; gap: 8px;
@@ -223,6 +224,7 @@ a { color: inherit; text-decoration: none; }
 .button-more__icon img { border-radius: 7px !important; width: 20px !important; height: 20px !important; }
 .button-more__text { display: block !important; font-weight: 700 !important; }
 .button-more:hover { background: rgba(26,115,232,.08) !important; color: var(--accent) !important; }
+.button-more._active { background: rgba(26,115,232,.12) !important; }
 /* Hide the ::after arrow pseudo-element from base.css */
 .link-menu::after { display: none !important; }
 /* Ensure menu:hover from base.css doesn't re-enable the grid layout */

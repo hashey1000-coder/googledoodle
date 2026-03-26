@@ -6,7 +6,8 @@ import gameData from '../data/games.json';
 const { games, homepageOrder, allSlugs } = gameData;
 
 const featured = homepageOrder.filter(s => s in games).slice(0, 12);
-const remaining = allSlugs.filter(s => !homepageOrder.includes(s));
+const featuredSet = new Set(featured);
+const remaining = allSlugs.filter(s => !featuredSet.has(s));
 
 const HOME_SCHEMA = {
   '@context': 'https://schema.org',
