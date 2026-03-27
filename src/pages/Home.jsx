@@ -48,12 +48,12 @@ export default function Home() {
       <div className="home-intro">
         <div className="home-intro__left">
           <h1 className="home-intro__title">Google Doodle Games</h1>
-          <p className="home-intro__sub">Discover & play 100+ iconic Google Doodle mini-games — free, instant, straight in your browser.</p>
+          <p className="home-intro__sub">Discover & play {allSlugs.length} iconic Google Doodle mini-games — free, instant, straight in your browser.</p>
         </div>
         <span className="home-intro__badge">{allSlugs.length} Games</span>
       </div>
 
-      <p className="home-intro__desc">From Beethoven's 245th birthday to the Cricket World Cup, Google Doodles have delighted billions worldwide. This collection brings together every playable Doodle — beloved classics like Snake, Pac-Man, and Magic Cat Academy alongside rare anniversary editions — all running directly in your browser, completely free. No account. No install. Just play.</p>
+      <p className="home-intro__desc">From the legendary Pac-Man maze to the Cricket World Cup, Google Doodles have delighted billions worldwide. This collection brings together every playable Doodle — beloved classics like Snake, Pac-Man, and Magic Cat Academy alongside rare anniversary editions — all running directly in your browser, completely free. No account. No install. Just play.</p>
 
       {/* Featured */}
       <section className="games-section">
@@ -94,7 +94,7 @@ export default function Home() {
 
         <div className="home-about__block">
           <h2 className="home-about__heading">107 Games, Every Genre, One Place</h2>
-          <p>This collection spans the full range of what browser gaming can be. The Sports section covers Olympic disciplines from hurdles to basketball to slalom kayaking. The Snake category traces one of gaming's oldest and most satisfying mechanics through multiple artistic interpretations. The Classroom section houses Google's educational Doodles — including the Coding with Carrot game that has been used as a genuine teaching resource in schools worldwide. The Anniversary category holds the collection's most ambitious titles: the Beethoven musical education experience, the multi-part Hip Hop Doodle, and games built around historical milestones that most people would never have explored otherwise.</p>
+          <p>This collection spans the full range of what browser gaming can be. The Sports section covers Olympic disciplines from hurdles to basketball to slalom kayaking. The Snake category traces one of gaming's oldest and most satisfying mechanics through multiple artistic interpretations. The Classroom section houses Google's educational Doodles — including the Coding for Carrots game that has been used as a genuine teaching resource in schools worldwide. The Anniversary category holds the collection's most ambitious titles: the Beethoven musical education experience, the multi-part Hip Hop Doodle, and games built around historical milestones that most people would never have explored otherwise.</p>
           <p>Every game here is free, every game loads instantly in your browser, and every game links to related titles so one discovery naturally leads to another. There are no subscriptions, no in-app purchases, no accounts required — just 107 games waiting to be played, replayed, and shared. Start anywhere. The collection rewards curiosity above all else.</p>
         </div>
 

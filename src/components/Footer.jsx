@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="site-footer__col site-footer__col--brand">
           <div className="site-footer__brand">
             <Logo />
-            <span className="site-footer__logo-text">Google Doodle</span>
+            <span className="site-footer__logo-text">Google Doodle Games</span>
           </div>
           <p className="site-footer__tagline">
             Your home for every Google Doodle game &mdash; free, forever, one click away.
@@ -53,6 +53,7 @@ export default function Footer() {
             <Link to="/about/"   className="site-footer__link">About Us</Link>
             <Link to="/contact/" className="site-footer__link">Contact</Link>
             <Link to="/privacy/" className="site-footer__link">Privacy Policy</Link>
+            <Link to="/terms/"   className="site-footer__link">Terms of Service</Link>
           </nav>
         </div>
 

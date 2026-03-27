@@ -12,7 +12,7 @@ const ABOUT_SCHEMA = {
 export default function About() {
   useSEO({
     title: `About Us — ${SITE_NAME}`,
-    description: `Learn about DoodleArcade — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
+    description: `Learn about Google Doodle Games — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
     canonical: `${SITE_URL}/about/`,
     schema: ABOUT_SCHEMA,
   });
@@ -41,8 +41,8 @@ export default function About() {
           economy millions in lost productivity. Not bad for a homepage easter egg.
         </p>
         <p>
-          Since then, Google's Doodlers have shipped dozens of interactive games: from Beethoven's
-          245th birthday synthesizer to the Tokyo 2020 Olympic champion island RPG. Each one is a
+          Since then, Google's Doodlers have shipped dozens of interactive games: from the Beethoven
+          birthday synthesizer to the Tokyo 2020 Champion Island RPG. Each one is a
           polished piece of interactive design, and we think they deserve to live on long after their
           original day in the spotlight.
         </p>
@@ -51,7 +51,7 @@ export default function About() {
         <div className="inner-page__cards">
           <div className="inner-page__card">
             <span className="inner-page__card-icon">🎮</span>
-            <div className="inner-page__card-title">107+ Games</div>
+            <div className="inner-page__card-title">107 Games</div>
             <p className="inner-page__card-desc">Every playable Google Doodle in one place — classics, rarities, and everything in between.</p>
           </div>
           <div className="inner-page__card">

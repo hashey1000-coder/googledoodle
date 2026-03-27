@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
-export const SITE_NAME = 'Google Doodle';
-export const SITE_URL  = 'https://doodlearcade.com';
+export const SITE_NAME = 'Google Doodle Games';
+export const SITE_URL  = 'https://googledoodlegames.org';
 
 /** Strip HTML tags and decode common entities to plain text. */
 export function stripHtml(html = '') {

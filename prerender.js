@@ -21,8 +21,8 @@ const gamesJson = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src', 'data', 'games.json'), 'utf-8')
 );
 
-const SITE_URL  = 'https://doodlearcade.com';
-const SITE_NAME = 'Google Doodle';
+const SITE_URL  = 'https://googledoodlegames.org';
+const SITE_NAME = 'Google Doodle Games';
 const TODAY     = new Date().toISOString().split('T')[0];
 
 // ── Helpers ───────────────────────────────────────────────────
@@ -120,7 +120,7 @@ function getRouteSeoBlock(route) {
   if (route === '/privacy/') {
     return buildSeoBlock({
       title:       `Privacy Policy — ${SITE_NAME}`,
-      description: `Read the DoodleArcade privacy policy. We do not collect personal data, use tracking cookies, or share your information with third parties.`,
+      description: `Read the Google Doodle Games privacy policy. We do not collect personal data, use tracking cookies, or share your information with third parties.`,
       canonical:   `${SITE_URL}/privacy/`,
       schema: {
         '@context': 'https://schema.org',
@@ -136,7 +136,7 @@ function getRouteSeoBlock(route) {
   if (route === '/about/') {
     return buildSeoBlock({
       title:       `About Us — ${SITE_NAME}`,
-      description: `Learn about DoodleArcade — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
+      description: `Learn about Google Doodle Games — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
       canonical:   `${SITE_URL}/about/`,
       schema: {
         '@context': 'https://schema.org',
@@ -152,7 +152,7 @@ function getRouteSeoBlock(route) {
   if (route === '/contact/') {
     return buildSeoBlock({
       title:       `Contact Us — ${SITE_NAME}`,
-      description: `Get in touch with the DoodleArcade team. Report a broken game, suggest a missing Doodle, or just say hello.`,
+      description: `Get in touch with the Google Doodle Games team. Report a broken game, suggest a missing Doodle, or just say hello.`,
       canonical:   `${SITE_URL}/contact/`,
       schema: {
         '@context': 'https://schema.org',
@@ -163,7 +163,21 @@ function getRouteSeoBlock(route) {
       },
     });
   }
-
+  /* Terms of Service */
+  if (route === '/terms/') {
+    return buildSeoBlock({
+      title:       `Terms of Service — ${SITE_NAME}`,
+      description: `Read the Google Doodle Games terms of service. Understand the rules, disclaimers, and intellectual-property notices that govern the use of this site.`,
+      canonical:   `${SITE_URL}/terms/`,
+      schema: {
+        '@context': 'https://schema.org',
+        '@type':    'WebPage',
+        name:       `Terms of Service — ${SITE_NAME}`,
+        url:        `${SITE_URL}/terms/`,
+        isPartOf:   { '@type': 'WebSite', url: `${SITE_URL}/` },
+      },
+    });
+  }
   /* Category pages */
   if (slug in gamesJson.categories) {
     const cat       = gamesJson.categories[slug];
@@ -271,6 +285,7 @@ function generateSitemap(routes) {
     if (route === '/')             { priority = '1.0'; changefreq = 'weekly';  }
     else if (slug in gamesJson.categories) { priority = '0.8'; changefreq = 'weekly';  }
     else if (route === '/privacy/')        { priority = '0.2'; changefreq = 'yearly';  }
+    else if (route === '/terms/')         { priority = '0.2'; changefreq = 'yearly';  }
     return [
       '  <url>',
       `    <loc>${SITE_URL}${route}</loc>`,
@@ -293,6 +308,7 @@ function generateSitemap(routes) {
 const routes = [
   '/',
   '/privacy/',
+  '/terms/',
   '/about/',
   '/contact/',
   ...Object.keys(gamesJson.categories).map(c => `/${c}/`),
@@ -319,7 +335,7 @@ console.log(`✅ Generated sitemap.xml (${routes.length} URLs)`);
 // 404.html
 const notFoundBlock = buildSeoBlock({
   title:       `404 — Page Not Found | ${SITE_NAME}`,
-  description: 'Page not found. Return to DoodleArcade to play free Google Doodle games.',
+  description: 'Page not found. Return to Google Doodle Games to play free Google Doodle games.',
   canonical:   `${SITE_URL}/`,
   noindex:     true,
 });

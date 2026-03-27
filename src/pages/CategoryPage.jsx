@@ -75,7 +75,7 @@ export default function CategoryPage() {
       <div className="cat-page__banner">
         <span className="cat-page__count">{gameSlugs.length} Games</span>
         <h1 className="cat-page__title">{category.name}</h1>
-        <p className="cat-page__sub">Play all {gameSlugs.length} {category.name.toLowerCase()} free in your browser — instant, no account required.</p>
+        <p className="cat-page__sub">Play all {gameSlugs.length} {category.name.toLowerCase()} games free in your browser — instant, no account required.</p>
       </div>
       <section className="games-section">
         <div className="games-section__head">

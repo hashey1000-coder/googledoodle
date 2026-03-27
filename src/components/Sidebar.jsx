@@ -64,7 +64,7 @@ export default function Sidebar({ open, onClose }) {
                 <span className="link-menu__icon"><picture><img src="/assets/images/pac300jpg.webp" width="24" height="24" alt="Pacman" /></picture></span>
                 <span className="link-menu__text">Google Pacman</span>
               </NavLink>
-              <NavLink className={navCls} to="/chamion-island-games/" onClick={onClose}>
+              <NavLink className={navCls} to="/champion-island-games/" onClick={onClose}>
                 <span className="link-menu__icon"><picture><img src="/assets/images/hq300jpg.webp" width="24" height="24" alt="Champion Island" /></picture></span>
                 <span className="link-menu__text">Champion Island Games</span>
               </NavLink>

@@ -4,7 +4,7 @@ import { useSEO, SITE_URL, SITE_NAME } from '../utils/seo';
 export default function NotFound() {
   useSEO({
     title: `404 — Page Not Found | ${SITE_NAME}`,
-    description: 'Page not found. Return to DoodleArcade to play free Google Doodle games.',
+    description: 'Page not found. Return to Google Doodle Games to play free Google Doodle games.',
     canonical: `${SITE_URL}/`,
     noindex: true,
   });

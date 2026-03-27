@@ -123,7 +123,7 @@ export default function Header({ onMenuToggle }) {
             {/* Shine highlight */}
             <circle cx="18" cy="18" r="3" fill="white" opacity="0.5"/>
           </svg>
-          <span className="site-logo__text">Google Doodle</span>
+          <span className="site-logo__text">Google Doodle Games</span>
         </Link>
 
         {/* Desktop nav */}

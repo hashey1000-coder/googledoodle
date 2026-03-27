@@ -12,7 +12,7 @@ const PRIVACY_SCHEMA = {
 export default function Privacy() {
   useSEO({
     title: `Privacy Policy — ${SITE_NAME}`,
-    description: `Read the DoodleArcade privacy policy. We do not collect personal data, use tracking cookies, or share your information with third parties.`,
+    description: `Read the Google Doodle Games privacy policy. We do not collect personal data, use tracking cookies, or share your information with third parties.`,
     canonical: `${SITE_URL}/privacy/`,
     schema: PRIVACY_SCHEMA,
   });
@@ -27,7 +27,7 @@ export default function Privacy() {
       <div className="inner-page__body">
         <h2>Overview</h2>
         <p>
-          DoodleArcade is a static website that hosts playable Google Doodle games for entertainment.
+          Google Doodle Games is a static website that hosts playable Google Doodle games for entertainment.
           We are committed to your privacy: we do not collect personal information, we do not use
           tracking cookies, and we do not sell or share any data with third parties.
         </p>
@@ -42,7 +42,7 @@ export default function Privacy() {
 
         <h2>Cookies</h2>
         <p>
-          DoodleArcade does not set any cookies of its own. No tracking pixels, no analytics cookies,
+          Google Doodle Games does not set any cookies of its own. No tracking pixels, no analytics cookies,
           no advertising cookies. Your browser settings remain fully in your control.
         </p>
 
@@ -60,13 +60,13 @@ export default function Privacy() {
         <h2>Local Storage</h2>
         <p>
           Some games may use your browser's local storage to save game progress or settings. This data
-          is stored entirely on your own device and is never transmitted to DoodleArcade or any
+          is stored entirely on your own device and is never transmitted to Google Doodle Games or any
           third-party server.
         </p>
 
         <h2>Children's Privacy</h2>
         <p>
-          DoodleArcade does not knowingly collect any information from children under 13. If you
+          Google Doodle Games does not knowingly collect any information from children under 13. If you
           believe a child has provided us personal information, please contact us so we can address it.
         </p>
 

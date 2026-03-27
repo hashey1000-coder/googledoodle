@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doodlearcade.com/sitemap.xml
+Sitemap: https://googledoodlegames.org/sitemap.xml

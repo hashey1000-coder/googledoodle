@@ -14,7 +14,9 @@
       "likes": "27",
       "dislikes": "4",
       "plays": "1.49K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "chicken-invaders",
         "baseball",
@@ -43,7 +45,6 @@
         "craft-block-world-building",
         "toilet-rush",
         "block-puzzle-2020",
-        "adventures-of-brave-bob",
         "magic-cat-academy",
         "iron-snout-pig-fighting-game",
         "stickman-party",
@@ -97,7 +98,6 @@
         "doodle-valentines-day",
         "block-puzzle-2020",
         "ooze-odyssey-2",
-        "baseball",
         "minesweeper",
         "adventures-of-brave-bob",
         "stickman-party",
@@ -181,13 +181,12 @@
         "anniversary"
       ],
       "carousel": [
-        "basketball-2012-google-doodle",
         "slitherio",
         "minesweeper",
         "mr-racer",
         "birth-of-hip-hop-doodle-game",
         "snake-football",
-        "chamion-island-games",
+        "champion-island-games",
         "catpad",
         "soccer-2012",
         "car-football",
@@ -285,7 +284,10 @@
       "likes": "120",
       "dislikes": "22",
       "plays": "6.04K",
-      "categories": [],
+      "categories": [
+        "anniversary",
+        "classroom"
+      ],
       "carousel": [
         "memory",
         "pacman",
@@ -363,7 +365,6 @@
         "doodle-crossword-puzzle",
         "minesweeper",
         "snake",
-        "block-champ-10x10",
         "doodle-jump",
         "coffee-craze-sorting-game",
         "feud",
@@ -625,7 +626,6 @@
         "snake-fit",
         "slalom-canoe",
         "block-puzzle-2020",
-        "catpad",
         "dino-swords"
       ],
       "moreGames": [
@@ -668,7 +668,6 @@
         "doodle-ludwig-van-beethovens-245th-year",
         "dino-swords",
         "iron-snout-pig-fighting-game",
-        "celebrating-johann-sebastian-bach",
         "chess1",
         "growmi",
         "eiji-tsuburayas-birthday",
@@ -865,11 +864,11 @@
         "stickman-party"
       ]
     },
-    "chamion-island-games": {
+    "champion-island-games": {
       "title": "Champion Island Games",
-      "slug": "chamion-island-games",
+      "slug": "champion-island-games",
       "iframeUrl": "https://game3.glov3.me/uploads/game/html5/25753/",
-      "thumbnail": "chamion-island-games-thumb.jpg",
+      "thumbnail": "champion-island-games-thumb.jpg",
       "description": "<h2>About Champion Island Games</h2><p>Champion Island Games is the most ambitious Google Doodle ever created, built for the Tokyo 2020 Olympics. It is a full-length RPG adventure where you play as Lucky the calico cat, travelling across a beautiful Japanese-inspired island to challenge seven sport champions. Play this epic free adventure game now!</p><h2>Champion Island Games Gameplay</h2><p>The island is an open world you explore freely. Seven champion characters, each representing a different Olympic sport — table tennis, skateboarding, archery, swimming, climbing, marathon, and artistic swimming — await you at different locations. Each champion offers a unique mini-game challenge that you must complete to earn a trophy.</p><p>Between challenges, the island is packed with side quests, hidden collectibles, and NPCs who tell stories rooted in Japanese mythology and folklore. The pixel art is exquisite, the soundtrack is atmospheric, and the attention to cultural detail makes exploration rewarding in its own right. Completing all seven challenges and discovering every secret can take several hours.</p><h2>How to Play Champion Island Games</h2><p>Use the arrow keys or WASD to move Lucky the cat around the island. Press the spacebar to interact with NPCs, start challenges, and skip dialogue. Each sport mini-game has its own unique controls explained at the start. Explore every corner of the island — hidden paths, underwater caves, and rooftop shortcuts hold secrets and side quests.</p><h2>Game Features</h2><ul><li>Seven unique sport-themed mini-games</li><li>Open-world exploration with side quests</li><li>Beautiful pixel art inspired by Japanese culture</li><li>Rich storyline rooted in mythology and folklore</li><li>Hours of content — the longest Google Doodle ever</li></ul><p>Join Lucky on an Olympic adventure across Champion Island. Play Champion Island Games now!</p>",
       "intro": [
         "A full retro RPG Doodle built for the Tokyo Olympics — seven sports, one legendary island.",
@@ -1018,7 +1017,6 @@
         "coffee-craze-sorting-game",
         "happy-snakes",
         "chess1",
-        "chicken-invaders",
         "celebrating-petanque",
         "adventures-of-brave-bob",
         "gold-digger-frvr",
@@ -1124,7 +1122,7 @@
       "moreGames": [
         "toilet-rush",
         "temple-of-boom",
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-oskar-fischinger",
         "snake-football",
         "craft-block-world-building",
@@ -1162,7 +1160,6 @@
         "jerry-lawson",
         "halloween",
         "the-mergest-kingdom",
-        "craft-block-world-building",
         "doodle-kids-coding",
         "the-scale-of-the-universe-online",
         "minesweeper",
@@ -1184,7 +1181,7 @@
         "dice-roll-protect-the-relic",
         "snake1",
         "car-football",
-        "chamion-island-games",
+        "champion-island-games",
         "adventures-of-brave-bob",
         "catpad",
         "stickman-party",
@@ -1223,7 +1220,7 @@
         "tap-tap-goal",
         "snake1",
         "basketball-2012-google-doodle",
-        "chamion-island-games",
+        "champion-island-games",
         "moto-xm-bike-race-game",
         "google-doodle-football",
         "retro-basketball",
@@ -1431,7 +1428,6 @@
       ],
       "carousel": [
         "mothers-day-2020-doodle",
-        "doodle-celebrating-loteria",
         "doodle-jump-2",
         "snake",
         "doodle-celebrating-mbira",
@@ -1662,8 +1658,7 @@
         "mr-racer",
         "table-tennis-world-tour",
         "block-puzzle-2020",
-        "gold-digger-frvr",
-        "doodle-crossword-puzzle"
+        "gold-digger-frvr"
       ],
       "moreGames": [
         "doodle-roswells-66th-anniversary",
@@ -1846,7 +1841,7 @@
       ]
     },
     "doodle-halloween-2022": {
-      "title": "Doodle  Halloween 2022",
+      "title": "Doodle Halloween 2022",
       "slug": "doodle-halloween-2022",
       "iframeUrl": "https://doodles.google/doodle/halloween-2022/",
       "thumbnail": "doodle-halloween-2022-thumb.jpg",
@@ -1874,7 +1869,7 @@
         "celebrating-lake-xochimilco",
         "chinese-new-year-snake-game",
         "doodle-celebrating-loteria",
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-valentines-day",
         "doodle-kids-coding",
         "slalom-canoe",
@@ -2052,7 +2047,6 @@
         "catpad",
         "celebrating-johann-sebastian-bach",
         "google-doodle-football",
-        "doodle-jump-2",
         "tap-tap-goal",
         "soccer-2012",
         "adventures-of-brave-bob",
@@ -2078,7 +2072,9 @@
       "likes": "10",
       "dislikes": "6",
       "plays": "1.48K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "dinosaur",
         "snake-football",
@@ -2147,7 +2143,7 @@
         "basketball-2012-google-doodle",
         "table-tennis-world-tour",
         "doodle-celebrating-loteria",
-        "chamion-island-games",
+        "champion-island-games",
         "memory",
         "magic-cat-academy",
         "doodle-halloween-2020"
@@ -2255,11 +2251,10 @@
         "car-football",
         "table-tennis-world-tour",
         "tic-tac-toe",
-        "doodle-oskar-fischinger",
         "memory",
         "doodle-jump",
         "doodle-cricket-game",
-        "chamion-island-games",
+        "champion-island-games",
         "chess1",
         "catpad"
       ],
@@ -2326,7 +2321,6 @@
         "snake-fit",
         "garden-gnomes",
         "stickman-party",
-        "doodle-qixi-festival-chilseok",
         "adventures-of-brave-bob",
         "moto-xm-bike-race-game",
         "magic-cat-academy",
@@ -2372,7 +2366,7 @@
         "tap-tap-goal"
       ],
       "moreGames": [
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-history-of-pizza",
         "the-mergest-kingdom",
         "memory",
@@ -2462,7 +2456,6 @@
       ],
       "carousel": [
         "doodle-oskar-fischinger",
-        "doodle-valentines-day",
         "doodle-halloween-2022",
         "coffee-craze-sorting-game",
         "slalom-canoe",
@@ -2540,7 +2533,7 @@
         "birth-of-hip-hop-doodle-game",
         "car-football",
         "doodle-roswells-66th-anniversary",
-        "chamion-island-games",
+        "champion-island-games",
         "blob-opera-google-game",
         "adventures-of-brave-bob",
         "iron-snout-pig-fighting-game",
@@ -2575,7 +2568,7 @@
         "block-champ-10x10",
         "the-scale-of-the-universe-online",
         "doodle-googles-15th-birthday",
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-history-of-pizza",
         "doodle-valentines-day-2022",
         "google-doodle-football",
@@ -2595,7 +2588,6 @@
         "doodle-kids-coding",
         "adventures-of-brave-bob",
         "block-puzzle-2020",
-        "eiji-tsuburayas-birthday",
         "basketball-2012-google-doodle",
         "adventures-of-brave-bob",
         "iron-snout-pig-fighting-game",
@@ -2625,7 +2617,7 @@
         "mini"
       ],
       "carousel": [
-        "chamion-island-games",
+        "champion-island-games",
         "mothers-day-2020-doodle",
         "chess1",
         "odd-bot-out",
@@ -2651,7 +2643,6 @@
         "ooze-odyssey-2",
         "block-champ-10x10",
         "moto-xm-bike-race-game",
-        "feud",
         "adventures-of-brave-bob",
         "the-mergest-kingdom",
         "gold-digger-frvr",
@@ -2730,7 +2721,9 @@
       "likes": "36",
       "dislikes": "9",
       "plays": "2.37K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "popcorn-box",
         "coffee-craze-sorting-game",
@@ -2761,7 +2754,6 @@
         "adventures-of-brave-bob",
         "catpad",
         "iron-snout-pig-fighting-game",
-        "gold-digger-frvr",
         "moto-xm-bike-race-game",
         "google-cat-game",
         "magic-cat-academy"
@@ -2781,7 +2773,10 @@
       "likes": "197",
       "dislikes": "23",
       "plays": "5.18K",
-      "categories": [],
+      "categories": [
+        "mini",
+        "classroom"
+      ],
       "carousel": [
         "doodle-halloween-2022",
         "google-santa-tracker",
@@ -2803,7 +2798,7 @@
         "doodle-roswells-66th-anniversary",
         "popcorn-time",
         "no-internet-dinosaur-game-google-chrome-dino",
-        "chamion-island-games",
+        "champion-island-games",
         "celebrating-pani-puri",
         "feud",
         "catpad",
@@ -2812,7 +2807,6 @@
         "adventures-of-brave-bob",
         "stickman-hook",
         "the-mergest-kingdom",
-        "google-cat-game",
         "gold-digger-frvr",
         "iron-snout-pig-fighting-game",
         "stickman-party"
@@ -3303,8 +3297,7 @@
         "catpad",
         "stickman-hook",
         "the-mergest-kingdom",
-        "temple-run-2",
-        "iron-snout-pig-fighting-game"
+        "temple-run-2"
       ]
     },
     "jerry-lawson": {
@@ -3388,7 +3381,7 @@
         "celebrating-petanque",
         "feud",
         "halloween",
-        "chamion-island-games",
+        "champion-island-games",
         "stickman-party",
         "odd-bot-out",
         "block-champ-10x10",
@@ -3452,7 +3445,6 @@
         "zuma-deluxe"
       ],
       "moreGames": [
-        "magic-cat-academy",
         "doodle-crossword-puzzle",
         "popcorn-time",
         "doodle-qixi-festival-chilseok",
@@ -3669,7 +3661,7 @@
         "snake1"
       ],
       "moreGames": [
-        "chamion-island-games",
+        "champion-island-games",
         "birth-of-hip-hop-doodle-game",
         "odd-bot-out",
         "dino-swords",
@@ -4049,7 +4041,7 @@
       "moreGames": [
         "slalom-canoe",
         "odd-bot-out",
-        "chamion-island-games",
+        "champion-island-games",
         "tap-tap-goal",
         "moto-xm-bike-race-game",
         "zuma-deluxe",
@@ -4098,7 +4090,6 @@
         "celebrating-lake-xochimilco",
         "stickman-hook",
         "temple-of-boom",
-        "penguin-fight",
         "solitaire"
       ],
       "moreGames": [
@@ -4109,7 +4100,7 @@
         "block-champ-10x10",
         "doodle-kids-coding",
         "boba-bubble-tea",
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-jump-2",
         "adventures-of-brave-bob",
         "moto-xm-bike-race-game",
@@ -4134,11 +4125,13 @@
       "likes": "50",
       "dislikes": "9",
       "plays": "2.09K",
-      "categories": [],
+      "categories": [
+        "classroom"
+      ],
       "carousel": [
         "magic-cat-academy",
         "doodle-oskar-fischinger",
-        "chamion-island-games",
+        "champion-island-games",
         "the-mergest-kingdom",
         "popcorn-chef-2",
         "google-cat-game",
@@ -4268,7 +4261,7 @@
         "chinese-new-year-snake-game",
         "blob-opera-google-game",
         "swing-dancing-and-the-savoy-ballroom",
-        "chamion-island-games",
+        "champion-island-games",
         "longcat",
         "dino-swords",
         "adventures-of-brave-bob",
@@ -4581,7 +4574,7 @@
         "snake-fit",
         "poker-with-friends",
         "stickman-party",
-        "chamion-island-games",
+        "champion-island-games",
         "doodle-qixi-festival-chilseok"
       ],
       "moreGames": [
@@ -4640,7 +4633,7 @@
       ],
       "moreGames": [
         "toilet-rush",
-        "chamion-island-games",
+        "champion-island-games",
         "catpad",
         "uno-online",
         "mr-racer",
@@ -4799,7 +4792,6 @@
         "google-cat-game",
         "google-maps-snake",
         "ooze-odyssey-2",
-        "snake-football",
         "doodle-crossword-puzzle"
       ],
       "moreGames": [
@@ -4864,7 +4856,7 @@
         "coffee-craze-sorting-game",
         "celebrating-petanque",
         "stickman-hook",
-        "chamion-island-games",
+        "champion-island-games",
         "jerry-lawson",
         "adventures-of-brave-bob",
         "google-cat-game",
@@ -5051,7 +5043,9 @@
       "likes": "314",
       "dislikes": "57",
       "plays": "12.36K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "slalom-canoe",
         "doodle-kids-coding",
@@ -5064,7 +5058,7 @@
         "uno-online",
         "retro-basketball",
         "jerry-lawson",
-        "chamion-island-games",
+        "champion-island-games",
         "minesweeper",
         "block-puzzle-2020",
         "mothers-day-2020-doodle",
@@ -5078,7 +5072,6 @@
         "table-tennis-world-tour",
         "doodle-ludwig-van-beethovens-245th-year",
         "coffee-craze-sorting-game",
-        "stickman-hook",
         "gold-digger-frvr",
         "adventures-of-brave-bob",
         "catpad",
@@ -5286,7 +5279,7 @@
         "celebrating-pani-puri",
         "doodle-cricket-game",
         "moto-xm-bike-race-game",
-        "chamion-island-games"
+        "champion-island-games"
       ],
       "moreGames": [
         "doodle-scoville",
@@ -5375,7 +5368,9 @@
       "likes": "65",
       "dislikes": "14",
       "plays": "2.95K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "penguin-fight",
         "doodle-jump-2",
@@ -5390,13 +5385,12 @@
         "zuma-deluxe",
         "basket-random-pro",
         "birth-of-hip-hop-doodle-game",
-        "temple-of-boom",
         "tic-tac-toe",
         "baseball"
       ],
       "moreGames": [
         "doodle-crossword-puzzle",
-        "chamion-island-games",
+        "champion-island-games",
         "toilet-rush",
         "coffee-craze-sorting-game",
         "google-maps-snake",
@@ -5427,7 +5421,9 @@
       "likes": "18",
       "dislikes": "7",
       "plays": "2.35K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "space-invaders-google",
         "adventures-of-brave-bob",
@@ -5455,7 +5451,6 @@
         "happy-snakes",
         "handless-millionaire",
         "celebrating-pani-puri",
-        "temple-run-2",
         "stickman-party",
         "the-mergest-kingdom",
         "google-cat-game",
@@ -5479,10 +5474,12 @@
       "likes": "42",
       "dislikes": "11",
       "plays": "1.57K",
-      "categories": [],
+      "categories": [
+        "mini"
+      ],
       "carousel": [
         "doodle-cricket-game",
-        "chamion-island-games",
+        "champion-island-games",
         "block-puzzle-2020",
         "catpad",
         "doodle-roswells-66th-anniversary",
@@ -5494,7 +5491,6 @@
         "snake",
         "doodle-jump",
         "baseball",
-        "the-mergest-kingdom",
         "slalom-canoe",
         "retro-basketball"
       ],
@@ -5554,7 +5550,7 @@
       ],
       "moreGames": [
         "odd-bot-out",
-        "chamion-island-games",
+        "champion-island-games",
         "catpad",
         "baseball",
         "hangman-challenge",
@@ -5719,7 +5715,6 @@
         "space-invaders-google",
         "swing-dancing-and-the-savoy-ballroom",
         "doodle-jump-3",
-        "uno-online",
         "magic-cat-academy",
         "snake1",
         "celebrating-lake-xochimilco",
@@ -5802,7 +5797,7 @@
     "classroom": {
       "name": "Classroom",
       "image": "Classroom-games.webp",
-      "description": "<h2>About Google Classroom & Educational Doodles</h2><p>Not every Google Doodle is designed to make you chase a high score. Some are built to teach. The Classroom category collects Google's educational and creative Doodles — games that prioritise learning, exploration, and creative expression over competition or reflexes. They are designed to be shared in classrooms, enjoyed by younger players, and returned to repeatedly as understanding deepens and new layers of the design reveal themselves.</p><p>The most celebrated of these is the Coding with Carrot Doodle, released in 2017 to mark 50 years of Kids Coding. Players guide a rabbit through a series of levels by assembling sequences of directional commands — left, right, forward, loop — learning the logical building blocks of programming without ever opening a text editor. It is an elegant on-ramp to computational thinking wrapped inside a cheerful puzzle game, and it has been used by teachers worldwide as a genuine classroom resource that introduces children to programming logic in a completely frictionless and joyful way.</p><p>Other games in the Classroom category celebrate scientific curiosity, artistic creativity, and cultural understanding. Some are interactive music experiences that let you compose simple melodies and explore harmony. Others are collaborative art generators that reveal how algorithms and human creativity can work together. A few blur the line between game and lesson so effectively that children play them repeatedly without realising they are absorbing something genuinely educational. That seamlessness — making learning feel indistinguishable from entertainment — is one of Google's greatest accomplishments in the Doodle format.</p><p>The Classroom category is ideal for parents looking for screen time that has genuine value, teachers searching for a five-minute starter activity, or anyone who prefers their gaming to come with a small intellectual reward alongside the fun. Nothing here requires prior knowledge or experience — every game is designed for immediate engagement and gradually reveals more depth as you play further. Start with Coding with Carrot if you have not already tried it. You will finish it in ten minutes and immediately want to go back and find a more efficient solution.</p>"
+      "description": "<h2>About Google Classroom & Educational Doodles</h2><p>Not every Google Doodle is designed to make you chase a high score. Some are built to teach. The Classroom category collects Google's educational and creative Doodles — games that prioritise learning, exploration, and creative expression over competition or reflexes. They are designed to be shared in classrooms, enjoyed by younger players, and returned to repeatedly as understanding deepens and new layers of the design reveal themselves.</p><p>The most celebrated of these is the Coding for Carrots Doodle, released in 2017 to mark 50 years of Kids Coding. Players guide a rabbit through a series of levels by assembling sequences of directional commands — left, right, forward, loop — learning the logical building blocks of programming without ever opening a text editor. It is an elegant on-ramp to computational thinking wrapped inside a cheerful puzzle game, and it has been used by teachers worldwide as a genuine classroom resource that introduces children to programming logic in a completely frictionless and joyful way.</p><p>Other games in the Classroom category celebrate scientific curiosity, artistic creativity, and cultural understanding. Some are interactive music experiences that let you compose simple melodies and explore harmony. Others are collaborative art generators that reveal how algorithms and human creativity can work together. A few blur the line between game and lesson so effectively that children play them repeatedly without realising they are absorbing something genuinely educational. That seamlessness — making learning feel indistinguishable from entertainment — is one of Google's greatest accomplishments in the Doodle format.</p><p>The Classroom category is ideal for parents looking for screen time that has genuine value, teachers searching for a five-minute starter activity, or anyone who prefers their gaming to come with a small intellectual reward alongside the fun. Nothing here requires prior knowledge or experience — every game is designed for immediate engagement and gradually reveals more depth as you play further. Start with Coding for Carrots if you have not already tried it. You will finish it in ten minutes and immediately want to go back and find a more efficient solution.</p>"
     },
     "mini": {
       "name": "Mini",
@@ -5848,7 +5843,7 @@
       "celebrating-lake-xochimilco",
       "celebrating-pani-puri",
       "celebrating-petanque",
-      "chamion-island-games",
+      "champion-island-games",
       "chess1",
       "chicken-invaders",
       "chinese-new-year-snake-game",
@@ -5988,7 +5983,10 @@
       "the-scale-of-the-universe-online",
       "tic-tac-toe",
       "toilet-rush",
-      "zuma-deluxe"
+      "zuma-deluxe",
+      "blob-opera-google-game",
+      "google-cat-game",
+      "pixel-art-color-by-numbers"
     ],
     "mini": [
       "baseball",
@@ -5997,7 +5995,7 @@
       "capyloop-snack",
       "catpad",
       "celebrating-pani-puri",
-      "chamion-island-games",
+      "champion-island-games",
       "chinese-new-year-snake-game",
       "coffee-craze-sorting-game",
       "dino-swords",
@@ -6028,14 +6026,22 @@
       "stickman-party",
       "swing-dancing-and-the-savoy-ballroom",
       "tic-tac-toe",
-      "uno-online"
+      "uno-online",
+      "adventures-of-brave-bob",
+      "doodle-jump-3",
+      "gold-digger-frvr",
+      "google-cat-game",
+      "stickman-hook",
+      "temple-of-boom",
+      "temple-run-2",
+      "the-mergest-kingdom"
     ],
     "sports": [
       "baseball",
       "basket-random-pro",
       "basketball-2012-google-doodle",
       "car-football",
-      "chamion-island-games",
+      "champion-island-games",
       "chess1",
       "doodle-cricket-game",
       "google-doodle-football",
@@ -6063,7 +6069,7 @@
       "celebrating-lake-xochimilco",
       "celebrating-pani-puri",
       "celebrating-petanque",
-      "chamion-island-games",
+      "champion-island-games",
       "chinese-new-year-snake-game",
       "doctor-who-doodle",
       "doodle-celebrating-loteria",
@@ -6092,7 +6098,8 @@
       "pacman",
       "pony-express",
       "snake",
-      "swing-dancing-and-the-savoy-ballroom"
+      "swing-dancing-and-the-savoy-ballroom",
+      "blob-opera-google-game"
     ],
     "popular": [
       "snake",
@@ -6103,7 +6110,7 @@
       "magic-cat-academy",
       "stickman-hook",
       "moto-xm-bike-race-game",
-      "chamion-island-games",
+      "champion-island-games",
       "no-internet-dinosaur-game-google-chrome-dino",
       "dinosaur",
       "dino-swords",
@@ -6129,7 +6136,7 @@
     "solitaire",
     "tic-tac-toe",
     "celebrating-petanque",
-    "chamion-island-games",
+    "champion-island-games",
     "baseball",
     "garden-gnomes",
     "pacman",
@@ -6167,7 +6174,7 @@
     "celebrating-lake-xochimilco",
     "celebrating-pani-puri",
     "celebrating-petanque",
-    "chamion-island-games",
+    "champion-island-games",
     "chess1",
     "chicken-invaders",
     "chinese-new-year-snake-game",

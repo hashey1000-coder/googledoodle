@@ -11,7 +11,7 @@ const CONTACT_SCHEMA = {
 export default function Contact() {
   useSEO({
     title: `Contact Us — ${SITE_NAME}`,
-    description: `Get in touch with the DoodleArcade team. Report a broken game, suggest a missing Doodle, or just say hello.`,
+    description: `Get in touch with the Google Doodle Games team. Report a broken game, suggest a missing Doodle, or just say hello.`,
     canonical: `${SITE_URL}/contact/`,
     schema: CONTACT_SCHEMA,
   });
@@ -19,11 +19,11 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
     const data     = new FormData(e.target);
-    const subject  = encodeURIComponent(`DoodleArcade: ${data.get('subject') || 'Message'}`);
+    const subject  = encodeURIComponent(`Google Doodle Games: ${data.get('subject') || 'Message'}`);
     const body     = encodeURIComponent(
       `Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`
     );
-    window.location.href = `mailto:hello@doodlearcade.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@googledoodlegames.org?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -40,7 +40,7 @@ export default function Contact() {
             <div>
               <div className="contact-info__label">Email</div>
               <div className="contact-info__value">
-                <a href="mailto:hello@doodlearcade.com">hello@doodlearcade.com</a>
+                <a href="mailto:hello@googledoodlegames.org">hello@googledoodlegames.org</a>
               </div>
             </div>
           </div>
