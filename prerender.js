@@ -344,6 +344,42 @@ const notFoundBlock = buildSeoBlock({
 fs.writeFileSync(path.join(dist, '404.html'), injectSeo(indexHtml, notFoundBlock));
 console.log(`✅ Created 404.html`);
 
+// ── Redirect pages ────────────────────────────────────────────
+// Generate lightweight HTML files that redirect old/alias URLs to their
+// canonical destinations. These fire a <meta refresh> + JS redirect so
+// they work on any static host without server-side rewrite rules.
+
+const REDIRECTS = {
+  '/pac-man/':          '/pacman/',
+  '/pac-man':           '/pacman/',
+  '/privacy-policy/':   '/privacy/',
+  '/privacy-policy':    '/privacy/',
+  '/terms-of-service/': '/terms/',
+  '/terms-of-service':  '/terms/',
+};
+
+let redirectCount = 0;
+for (const [from, to] of Object.entries(REDIRECTS)) {
+  const dest    = `${SITE_URL}${to}`;
+  const dirPath = path.join(dist, from.endsWith('/') ? from : `${from}/`);
+  fs.mkdirSync(dirPath, { recursive: true });
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="refresh" content="0;url=${dest}"/>
+  <link rel="canonical" href="${dest}"/>
+  <meta name="robots" content="noindex, follow"/>
+  <title>Redirecting…</title>
+  <script>window.location.replace("${dest}");</script>
+</head>
+<body><p>Redirecting to <a href="${dest}">${dest}</a>…</p></body>
+</html>`;
+  fs.writeFileSync(path.join(dirPath, 'index.html'), html);
+  redirectCount++;
+}
+console.log(`✅ Created ${redirectCount} redirect pages`);
+
 console.log(`✅ Pre-rendered ${created} route files`);
 console.log(`   Total routes : ${routes.length}`);
 console.log(`\nDeploy the dist/ folder to any static host.`);
