@@ -379,6 +379,22 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: blur(6px);
 }
 
+/* iOS CSS fake-fullscreen */
+.gp-frame-wrap--fs {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9998 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  border-radius: 0 !important;
+  background: #000;
+}
+.gp-frame-wrap--fs .gp-iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
 /* Fullscreen exit button */
 .gp-fs-exit {
   position: absolute;

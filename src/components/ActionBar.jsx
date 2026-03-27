@@ -4,7 +4,7 @@ import {
 } from 'firebase/database';
 import { db, firebaseReady } from '../utils/firebase';
 
-export default function ActionBar({ game, onToggleControls }) {
+export default function ActionBar({ game, playing, onFullscreen, onToggleControls }) {
   const slug = game.slug;
 
   // ── local state ──────────────────────────────────────────────
@@ -75,14 +75,6 @@ export default function ActionBar({ game, onToggleControls }) {
   const ratingPct  = total > 0 ? Math.round((likes / total) * 100) : 50;
 
   // ── utility handlers ─────────────────────────────────────────
-  const handleFullscreen = () => {
-    const w = document.getElementById('game-window');
-    if (w) {
-      if (w.requestFullscreen) w.requestFullscreen();
-      else if (w.webkitRequestFullscreen) w.webkitRequestFullscreen();
-    }
-  };
-
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({ title: game.title, url: window.location.href });
@@ -146,12 +138,14 @@ export default function ActionBar({ game, onToggleControls }) {
           <span>Share</span>
         </button>
 
-        <button className="gp-btn gp-btn--fullscreen" onClick={handleFullscreen} title="Fullscreen">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M14 10l7-7M21 3h-6M21 3v6M10 14l-7 7M3 21h6M3 21v-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          <span>Fullscreen</span>
-        </button>
+        {playing && (
+          <button className="gp-btn gp-btn--fullscreen" onClick={onFullscreen} title="Fullscreen">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M14 10l7-7M21 3h-6M21 3v6M10 14l-7 7M3 21h6M3 21v-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>Fullscreen</span>
+          </button>
+        )}
       </div>
     </div>
   );

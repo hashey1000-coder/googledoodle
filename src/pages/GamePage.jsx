@@ -27,6 +27,7 @@ export default function GamePage() {
   const [controlsOpen, setControlsOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [fakeFSActive, setFakeFSActive] = useState(false);
   const game = games[slug];
 
   /* ── Related games — must be before early return (rules of hooks) ── */
@@ -105,17 +106,59 @@ export default function GamePage() {
     setControlsOpen(false);
     setPlaying(false);
     setIsFullscreen(false);
+    setFakeFSActive(false);
   }, [slug]);
 
   useEffect(() => {
-    const onFSChange = () => setIsFullscreen(!!document.fullscreenElement || !!document.webkitFullscreenElement);
+    const onFSChange = () => {
+      const native = !!document.fullscreenElement || !!document.webkitFullscreenElement;
+      if (!native) setIsFullscreen(false);
+      else setIsFullscreen(true);
+    };
+    const onKey = (e) => {
+      if (e.key === 'Escape') {
+        setFakeFSActive(false);
+        setIsFullscreen(false);
+      }
+    };
     document.addEventListener('fullscreenchange', onFSChange);
     document.addEventListener('webkitfullscreenchange', onFSChange);
+    document.addEventListener('keydown', onKey);
     return () => {
       document.removeEventListener('fullscreenchange', onFSChange);
       document.removeEventListener('webkitfullscreenchange', onFSChange);
+      document.removeEventListener('keydown', onKey);
     };
   }, []);
+
+  const handleFullscreen = () => {
+    const w = document.getElementById('game-window');
+    if (!w) return;
+    // Try native Fullscreen API first (desktop + Android)
+    const req = w.requestFullscreen || w.webkitRequestFullscreen;
+    if (req) {
+      req.call(w).then(() => {
+        setIsFullscreen(true);
+      }).catch(() => {
+        // iOS Safari rejects the promise — fall back to CSS fake-fullscreen
+        setFakeFSActive(true);
+        setIsFullscreen(true);
+      });
+    } else {
+      // No API at all (old iOS) — CSS fallback
+      setFakeFSActive(true);
+      setIsFullscreen(true);
+    }
+  };
+
+  const handleExitFullscreen = () => {
+    if (fakeFSActive) {
+      setFakeFSActive(false);
+      setIsFullscreen(false);
+    } else {
+      (document.exitFullscreen || document.webkitExitFullscreen)?.call(document);
+    }
+  };
 
   if (!game) {
     return (
@@ -167,7 +210,7 @@ export default function GamePage() {
 
         {/* ── Main column ── */}
         <div className="gp-main">
-          <div className="gp-frame-wrap" id="game-window">
+          <div className={`gp-frame-wrap${fakeFSActive ? ' gp-frame-wrap--fs' : ''}`} id="game-window">
             {playing ? (
               <iframe
                 className="gp-iframe"
@@ -205,7 +248,7 @@ export default function GamePage() {
               <button
                 className="gp-fs-exit"
                 aria-label="Exit fullscreen"
-                onClick={() => { document.exitFullscreen?.() ?? document.webkitExitFullscreen?.(); }}
+                onClick={handleExitFullscreen}
               >
                 <svg viewBox="0 0 14 14">
                   <line x1="1" y1="1" x2="13" y2="13"/>
@@ -215,7 +258,7 @@ export default function GamePage() {
             )}
           </div>
 
-          <ActionBar game={game} onToggleControls={() => setControlsOpen(!controlsOpen)} />
+          <ActionBar game={game} playing={playing} onFullscreen={handleFullscreen} onToggleControls={() => setControlsOpen(!controlsOpen)} />
           <ControlsPanel game={game} show={controlsOpen} />
 
           {game.carousel && game.carousel.length > 0 && (
