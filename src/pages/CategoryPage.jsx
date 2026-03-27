@@ -85,6 +85,13 @@ export default function CategoryPage() {
           {gameSlugs.map(s => <GameCard key={s} slug={s} variant="homepage" />)}
         </div>
       </section>
+
+      {category.description && (
+        <section
+          className="cat-about"
+          dangerouslySetInnerHTML={{ __html: category.description }}
+        />
+      )}
     </div>
   );
 }
