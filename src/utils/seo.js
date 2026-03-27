@@ -100,9 +100,7 @@ export function useSEO({
     setMeta('og:url',         url,        'property');
     setMeta('og:site_name',   SITE_NAME,  'property');
     if (image) {
-      setMeta('og:image',        image,  'property');
-      setMeta('og:image:width',  '300',  'property');
-      setMeta('og:image:height', '225',  'property');
+      setMeta('og:image', image, 'property');
     }
 
     // Twitter Card

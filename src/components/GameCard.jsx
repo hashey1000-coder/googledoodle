@@ -9,7 +9,7 @@ const PlayIcon = () => (
   </div>
 );
 
-export default function GameCard({ slug, variant = 'grid' }) {
+export default function GameCard({ slug, variant = 'grid', priority = false }) {
   const game = games[slug];
   if (!game) return null;
 
@@ -20,7 +20,9 @@ export default function GameCard({ slug, variant = 'grid' }) {
     <img
       src={thumb ? `/assets/images/${thumb}` : ''}
       alt={title}
-      loading="lazy"
+      loading={priority ? 'eager' : 'lazy'}
+      width="300"
+      height="300"
       style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
     />
   );

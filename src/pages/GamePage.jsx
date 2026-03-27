@@ -15,7 +15,7 @@ function SidebarItem({ slug: s }) {
   return (
     <Link to={`/${s}/`} className="gp-sidebar__item">
       <div className="gp-sidebar__item-img">
-        <img src={g.thumbnail ? `/assets/images/${g.thumbnail}` : ''} alt={g.title} loading="lazy" />
+        <img src={g.thumbnail ? `/assets/images/${g.thumbnail}` : ''} alt={g.title} loading="lazy" width="120" height="120" />
       </div>
       <span className="gp-sidebar__item-name">{g.title}</span>
     </Link>

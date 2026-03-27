@@ -62,7 +62,7 @@ export default function Home() {
           <Link to="/all/" className="games-section__view-all">View all →</Link>
         </div>
         <div className="games-grid">
-          {featured.map(slug => <GameCard key={slug} slug={slug} variant="homepage" />)}
+          {featured.map((slug, i) => <GameCard key={slug} slug={slug} variant="homepage" priority={i < 12} />)}
         </div>
       </section>
 

@@ -64,8 +64,6 @@ function buildSeoBlock({ title, description, canonical, ogType = 'website', ogIm
   ];
   if (ogImage) {
     lines.push(`  <meta property="og:image" content="${ogImage}" />`);
-    lines.push(`  <meta property="og:image:width" content="300" />`);
-    lines.push(`  <meta property="og:image:height" content="225" />`);
     lines.push(`  <meta name="twitter:card" content="summary_large_image" />`);
     lines.push(`  <meta name="twitter:image" content="${ogImage}" />`);
   } else {
