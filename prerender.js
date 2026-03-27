@@ -86,7 +86,7 @@ function getRouteSeoBlock(route) {
   if (route === '/') {
     return buildSeoBlock({
       title:       `${SITE_NAME} — Play Google Doodle Games Free Online`,
-      description: 'Play 100+ iconic Google Doodle mini-games free online. Pac-Man, Snake, Magic Cat Academy, Cricket and more — instant play in your browser, no download.',
+      description: 'Play 107 iconic Google Doodle mini-games free online. Pac-Man, Snake, Magic Cat Academy, Cricket and more — instant play in your browser, no download.',
       canonical:   `${SITE_URL}/`,
       ogImage:     `${SITE_URL}/assets/images/logo.svg`,
       schema: {
@@ -97,7 +97,7 @@ function getRouteSeoBlock(route) {
             '@id':   `${SITE_URL}/#website`,
             name:    SITE_NAME,
             url:     `${SITE_URL}/`,
-            description: 'Play 100+ iconic Google Doodle mini-games free online.',
+            description: 'Play 107 iconic Google Doodle mini-games free online.',
             potentialAction: {
               '@type':      'SearchAction',
               target:       { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/all/?q={search_term_string}` },
@@ -136,7 +136,7 @@ function getRouteSeoBlock(route) {
   if (route === '/about/') {
     return buildSeoBlock({
       title:       `About Us — ${SITE_NAME}`,
-      description: `Learn about Google Doodle Games — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
+      description: `Learn about Google Doodle Games — your home for 107 free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
       canonical:   `${SITE_URL}/about/`,
       schema: {
         '@context': 'https://schema.org',
@@ -219,7 +219,9 @@ function getRouteSeoBlock(route) {
   /* Game pages */
   if (slug in gamesJson.games) {
     const game     = gamesJson.games[slug];
-    const title    = `Play ${game.title} Free Online — ${SITE_NAME}`;
+    let   title    = `Play ${game.title} Free Online — ${SITE_NAME}`;
+    if (title.length > 60) title = `Play ${game.title} — ${SITE_NAME}`;
+    if (title.length > 60) title = `${game.title} — ${SITE_NAME}`;
     const rawDesc  = (game.intro || []).join(' ') || stripHtml(game.description || '');
     const desc     = truncate(rawDesc, 155);
     const imageUrl = game.thumbnail

@@ -151,6 +151,7 @@ export default function Header({ onMenuToggle }) {
               type="text"
               autoComplete="off"
               placeholder="Search games…"
+              aria-label="Search games"
               value={query}
               onChange={e => handleSearch(e.target.value)}
             />

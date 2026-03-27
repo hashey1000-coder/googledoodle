@@ -80,10 +80,17 @@ export default function GamePage() {
     };
   }, [slug]);
 
+  const seoTitle = (() => {
+    if (!game) return `Game Not Found — ${SITE_NAME}`;
+    const full = `Play ${game.title} Free Online — ${SITE_NAME}`;
+    if (full.length <= 60) return full;
+    const short = `Play ${game.title} — ${SITE_NAME}`;
+    if (short.length <= 60) return short;
+    return `${game.title} — ${SITE_NAME}`;
+  })();
+
   useSEO({
-    title: game
-      ? `Play ${game.title} Free Online — ${SITE_NAME}`
-      : `Game Not Found — ${SITE_NAME}`,
+    title: seoTitle,
     description: game
       ? truncate(stripHtml((game.intro || []).join(' ') || game.description || ''), 155)
       : '',

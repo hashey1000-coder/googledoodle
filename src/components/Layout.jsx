@@ -16,7 +16,14 @@ export default function Layout() {
         {/* Left panel — permanent on desktop, drawer on mobile */}
         <Sidebar open={menuOpen} onClose={() => setMenuOpen(false)} />
         {menuOpen && (
-          <div className="mobile-overlay" onClick={() => setMenuOpen(false)} />
+          <div
+            className="mobile-overlay"
+            role="button"
+            tabIndex={0}
+            aria-label="Close menu"
+            onClick={() => setMenuOpen(false)}
+            onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setMenuOpen(false); }}
+          />
         )}
         <main className="page">
           <Outlet />

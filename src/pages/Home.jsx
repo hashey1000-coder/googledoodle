@@ -17,7 +17,7 @@ const HOME_SCHEMA = {
       '@id': `${SITE_URL}/#website`,
       name: SITE_NAME,
       url: `${SITE_URL}/`,
-      description: 'Play 100+ iconic Google Doodle mini-games free online.',
+      description: `Play ${allSlugs.length} iconic Google Doodle mini-games free online.`,
       potentialAction: {
         '@type': 'SearchAction',
         target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/all/?q={search_term_string}` },
@@ -37,7 +37,7 @@ const HOME_SCHEMA = {
 export default function Home() {
   useSEO({
     title: `${SITE_NAME} — Play Google Doodle Games Free Online`,
-    description: 'Play 100+ iconic Google Doodle mini-games free online. Pac-Man, Snake, Magic Cat Academy, Cricket and more — instant play in your browser, no download.',
+    description: `Play ${allSlugs.length} iconic Google Doodle mini-games free online. Pac-Man, Snake, Magic Cat Academy, Cricket and more — instant play in your browser, no download.`,
     canonical: `${SITE_URL}/`,
     schema: HOME_SCHEMA,
   });
@@ -93,9 +93,9 @@ export default function Home() {
         </div>
 
         <div className="home-about__block">
-          <h2 className="home-about__heading">107 Games, Every Genre, One Place</h2>
+          <h2 className="home-about__heading">{allSlugs.length} Games, Every Genre, One Place</h2>
           <p>This collection spans the full range of what browser gaming can be. The Sports section covers Olympic disciplines from hurdles to basketball to slalom kayaking. The Snake category traces one of gaming's oldest and most satisfying mechanics through multiple artistic interpretations. The Classroom section houses Google's educational Doodles — including the Coding for Carrots game that has been used as a genuine teaching resource in schools worldwide. The Anniversary category holds the collection's most ambitious titles: the Beethoven musical education experience, the multi-part Hip Hop Doodle, and games built around historical milestones that most people would never have explored otherwise.</p>
-          <p>Every game here is free, every game loads instantly in your browser, and every game links to related titles so one discovery naturally leads to another. There are no subscriptions, no in-app purchases, no accounts required — just 107 games waiting to be played, replayed, and shared. Start anywhere. The collection rewards curiosity above all else.</p>
+          <p>Every game here is free, every game loads instantly in your browser, and every game links to related titles so one discovery naturally leads to another. There are no subscriptions, no in-app purchases, no accounts required — just {allSlugs.length} games waiting to be played, replayed, and shared. Start anywhere. The collection rewards curiosity above all else.</p>
         </div>
 
         <p className="home-about__tagline">Your home for every Google Doodle game — free, forever, one click away.</p>

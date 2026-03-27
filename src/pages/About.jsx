@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useSEO, SITE_URL, SITE_NAME } from '../utils/seo';
+import gameData from '../data/games.json';
+
+const { allSlugs } = gameData;
 
 const ABOUT_SCHEMA = {
   '@context': 'https://schema.org',
@@ -12,7 +15,7 @@ const ABOUT_SCHEMA = {
 export default function About() {
   useSEO({
     title: `About Us — ${SITE_NAME}`,
-    description: `Learn about Google Doodle Games — your home for 100+ free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
+    description: `Learn about Google Doodle Games — your home for 107 free Google Doodle games. Discover our mission, the history of Doodle games, and why we built this collection.`,
     canonical: `${SITE_URL}/about/`,
     schema: ABOUT_SCHEMA,
   });
@@ -51,7 +54,7 @@ export default function About() {
         <div className="inner-page__cards">
           <div className="inner-page__card">
             <span className="inner-page__card-icon">🎮</span>
-            <div className="inner-page__card-title">107 Games</div>
+            <div className="inner-page__card-title">{allSlugs.length} Games</div>
             <p className="inner-page__card-desc">Every playable Google Doodle in one place — classics, rarities, and everything in between.</p>
           </div>
           <div className="inner-page__card">

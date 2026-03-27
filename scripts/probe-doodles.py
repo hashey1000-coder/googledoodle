@@ -47,7 +47,7 @@ DOODLE_SLUG_MAP = {
     'celebrating-lake-xochimilco':       'celebrating-lake-xochimilco-2017',
     'celebrating-pani-puri':             'celebrating-pani-puri',
     'celebrating-petanque':              'celebrating-petanque',
-    'chamion-island-games':              'doodle-champion-island-games-begin',
+    'champion-island-games':              'doodle-champion-island-games-begin',
     'chinese-new-year-snake-game':       'celebrating-the-chinese-new-year',
     'doctor-who-doodle':                 'doctor-who',
     'doodle-celebrating-loteria':        'celebrating-loteria',
