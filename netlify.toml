@@ -1,0 +1,22 @@
+[[redirects]]
+  from = "http://googledoodlegames.org/*"
+  to   = "https://googledoodlegames.org/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "http://www.googledoodlegames.org/*"
+  to   = "https://googledoodlegames.org/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "https://www.googledoodlegames.org/*"
+  to   = "https://googledoodlegames.org/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
