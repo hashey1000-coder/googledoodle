@@ -26,6 +26,7 @@ export default function GamePage() {
   const { slug } = useParams();
   const [controlsOpen, setControlsOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const game = games[slug];
 
   /* ── Related games — must be before early return (rules of hooks) ── */
@@ -96,7 +97,18 @@ export default function GamePage() {
   useEffect(() => {
     setControlsOpen(false);
     setPlaying(false);
+    setIsFullscreen(false);
   }, [slug]);
+
+  useEffect(() => {
+    const onFSChange = () => setIsFullscreen(!!document.fullscreenElement || !!document.webkitFullscreenElement);
+    document.addEventListener('fullscreenchange', onFSChange);
+    document.addEventListener('webkitfullscreenchange', onFSChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFSChange);
+      document.removeEventListener('webkitfullscreenchange', onFSChange);
+    };
+  }, []);
 
   if (!game) {
     return (
@@ -180,6 +192,18 @@ export default function GamePage() {
                   </svg>
                 </div>
                 <span className="gp-play-overlay__label">Click to Play</span>
+              </button>
+            )}
+            {isFullscreen && (
+              <button
+                className="gp-fs-exit"
+                aria-label="Exit fullscreen"
+                onClick={() => { document.exitFullscreen?.() ?? document.webkitExitFullscreen?.(); }}
+              >
+                <svg viewBox="0 0 14 14">
+                  <line x1="1" y1="1" x2="13" y2="13"/>
+                  <line x1="13" y1="1" x2="1" y2="13"/>
+                </svg>
               </button>
             )}
           </div>
